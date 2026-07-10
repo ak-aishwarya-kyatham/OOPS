@@ -8,11 +8,11 @@ The project models a simple media rental store where students can browse and bor
 
 ## OOP Concepts Used
 
-- **Classes and Objects**: `LibraryItem`, `Book`, `Magazine`, and `Library` are classes used to create objects.
+- **Classes and Objects**: `MediaItem`, `Movie`, `Series`, and `MediaStore` are classes used to create objects.
 - **Encapsulation**: Data fields are stored as private or protected members (`_title`, `_author`, `_available`) and accessed via public methods/properties.
-- **Abstraction**: `LibraryItem` is an abstract base class defining common behavior for all library items.
-- **Inheritance**: `Book` and `Magazine` inherit from `LibraryItem`.
-- **Polymorphism**: The `get_description` method is implemented differently by `Book` and `Magazine`, allowing each item to describe itself appropriately.
+- **Abstraction**: `MediaItem` is an abstract base class defining common behavior for all media items.
+- **Inheritance**: `Movie` and `Series` inherit from `MediaItem`.
+- **Polymorphism**: The `get_description` method is implemented differently by `Movie` and `Series`, allowing each item to describe itself appropriately.
 
 ## Files
 
@@ -35,17 +35,33 @@ py media_store_app.py
 
 ## Project Features
 
-- Add and manage library items.
+- Add and manage media items.
 - Search items by title.
 - Borrow and return items.
 - Clear console interface for student interaction.
 
 ## Example Use
 
-- View currently available books and magazines.
+- View currently available movies and series.
 - Search by title keyword like `Ocean` or `Coding`.
 - Borrow an item by ID.
 - Return an item by ID.
+
+## Sample Session
+
+```text
+Choose an option:
+1. Show available items
+2. Search by title
+3. Borrow an item
+4. Return an item
+5. Exit
+Enter choice (1-5): 1
+1: Movie | The Last Horizon directed by S. Walker (2024) - Genre: Science Fiction [Available]
+2: Movie | Ocean of Algorithms directed by N. Patel (2023) - Genre: Technology [Available]
+3: Series | Creative Coding by A. Summers (2025) - Season 2 [Available]
+4: Series | Planet Earth Explorer by C. Rivera (2024) - Season 1 [Available]
+```
 
 ## Notes
 
