@@ -47,23 +47,27 @@ py media_store_app.py
 - Borrow an item by ID.
 - Return an item by ID.
 
-## Sample Session
+## Sample Session Images
 
-![Media Store App Screenshot](media_store_demo.png)
+### Option 1: Show available items
 
-```text
-Choose an option:
-1. Show available items
-2. Search by title
-3. Borrow an item
-4. Return an item
-5. Exit
-Enter choice (1-5): 1
-1: Movie | The Last Horizon directed by S. Walker (2024) - Genre: Science Fiction [Available]
-2: Movie | Ocean of Algorithms directed by N. Patel (2023) - Genre: Technology [Available]
-3: Series | Creative Coding by A. Summers (2025) - Season 2 [Available]
-4: Series | Planet Earth Explorer by C. Rivera (2024) - Season 1 [Available]
-```
+![Option 1](media_store_option1.png)
+
+### Option 2: Search by title
+
+![Option 2](media_store_option2.png)
+
+### Option 3: Borrow an item
+
+![Option 3](media_store_option3.png)
+
+### Option 4: Return an item
+
+![Option 4](media_store_option4.png)
+
+### Option 5: Exit
+
+![Option 5](media_store_option5.png)
 
 ## Notes
 
