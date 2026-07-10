@@ -49,6 +49,8 @@ py media_store_app.py
 
 ## Sample Session
 
+![Media Store App Screenshot](media_store_demo.png)
+
 ```text
 Choose an option:
 1. Show available items
