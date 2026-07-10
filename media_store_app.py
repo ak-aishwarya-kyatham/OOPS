@@ -1,8 +1,8 @@
-from library import create_demo_library
-from library_item import LibraryItem
+from media_store import create_demo_store
+from media_item import MediaItem
 
 
-def print_items(items: list[LibraryItem]) -> None:
+def print_items(items: list[MediaItem]) -> None:
     if not items:
         print("No items found.")
         return
@@ -12,8 +12,8 @@ def print_items(items: list[LibraryItem]) -> None:
 
 
 def run_library_app() -> None:
-    library = create_demo_library()
-    print("Welcome to the Student Library App")
+    media_store = create_demo_store()
+    print("Welcome to the Student Media Rental App")
     print("This project demonstrates OOP with classes, encapsulation, inheritance, abstraction, and polymorphism.")
 
     while True:
@@ -26,17 +26,17 @@ def run_library_app() -> None:
 
         choice = input("Enter choice (1-5): ")
         if choice == "1":
-            print_items(library.list_available_items())
+            print_items(media_store.list_available_items())
         elif choice == "2":
             term = input("Enter title search term: ")
-            print_items(library.find_item_by_title(term))
+            print_items(media_store.find_item_by_title(term))
         elif choice == "3":
             try:
                 item_id = int(input("Enter item ID to borrow: "))
             except ValueError:
                 print("Please enter a valid number.")
                 continue
-            if library.borrow_item(item_id):
+            if media_store.borrow_item(item_id):
                 print("Item borrowed successfully.")
             else:
                 print("Could not borrow item. It may already be borrowed or the ID is invalid.")
@@ -46,12 +46,12 @@ def run_library_app() -> None:
             except ValueError:
                 print("Please enter a valid number.")
                 continue
-            if library.return_item(item_id):
+            if media_store.return_item(item_id):
                 print("Item returned successfully.")
             else:
                 print("Could not return item. It may already be available or the ID is invalid.")
         elif choice == "5":
-            print("Thank you for using the Student Library App. Goodbye!")
+            print("Thank you for using the Student Media Rental App. Goodbye!")
             break
         else:
             print("Invalid choice. Please use 1-5.")

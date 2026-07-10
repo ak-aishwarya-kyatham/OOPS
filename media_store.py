@@ -1,13 +1,13 @@
-from library_item import LibraryItem
-from book import Book
-from magazine import Magazine
+from media_item import MediaItem
+from movie import Movie
+from series import Series
 
 
-class Library:
-    """Library manages library items with encapsulated operations."""
+class MediaStore:
+    """MediaStore manages media items with encapsulated operations."""
 
     def __init__(self):
-        self._items: list[LibraryItem] = []
+        self._items: list[MediaItem] = []
 
     def add_item(self, item: LibraryItem) -> None:
         self._items.append(item)
@@ -32,10 +32,10 @@ class Library:
         return False
 
 
-def create_demo_library() -> Library:
-    library = Library()
-    library.add_item(Book(1, "The Time Traveler's Notebook", "S. Walker", 2024, "Science Fiction"))
-    library.add_item(Book(2, "Ocean of Algorithms", "N. Patel", 2023, "Technology"))
-    library.add_item(Magazine(3, "Creative Coding Monthly", "A. Summers", 2025, 12))
-    library.add_item(Magazine(4, "Planet Earth Explorer", "C. Rivera", 2024, 7))
-    return library
+def create_demo_store() -> MediaStore:
+    media_store = MediaStore()
+    media_store.add_item(Movie(1, "The Last Horizon", "S. Walker", 2024, "Science Fiction"))
+    media_store.add_item(Movie(2, "Ocean of Algorithms", "N. Patel", 2023, "Technology"))
+    media_store.add_item(Series(3, "Creative Coding", "A. Summers", 2025, 2))
+    media_store.add_item(Series(4, "Planet Earth Explorer", "C. Rivera", 2024, 1))
+    return media_store

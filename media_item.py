@@ -1,8 +1,8 @@
 import abc
 
 
-class LibraryItem(abc.ABC):
-    """Abstract base class representing a library item."""
+class MediaItem(abc.ABC):
+    """Abstract base class representing a media item."""
 
     def __init__(self, item_id: int, title: str, author: str, year: int):
         self._item_id = item_id

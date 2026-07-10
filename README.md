@@ -1,10 +1,10 @@
-# Student Library OOP Project
+# Student Media Rental OOP Project
 
 This is a Python project built to demonstrate Object-Oriented Programming (OOP) concepts.
 
 ## Project Overview
 
-The project models a simple library system where students can browse and borrow items such as books and magazines.
+The project models a simple media rental store where students can browse and borrow items such as movies and series.
 
 ## OOP Concepts Used
 
@@ -16,11 +16,11 @@ The project models a simple library system where students can browse and borrow 
 
 ## Files
 
-- `library_item.py` - Abstract base class and common library item behavior.
-- `book.py` - `Book` class that inherits from `LibraryItem`.
-- `magazine.py` - `Magazine` class that inherits from `LibraryItem`.
-- `library.py` - `Library` class and demo library builder.
-- `library_project.py` - Main program containing the command-line interface.
+- `media_item.py` - Abstract base class and common media item behavior.
+- `movie.py` - `Movie` class that inherits from `MediaItem`.
+- `series.py` - `Series` class that inherits from `MediaItem`.
+- `media_store.py` - `MediaStore` class and demo store builder.
+- `media_store_app.py` - Main program containing the command-line interface.
 - `README.md` - Project explanation and usage instructions.
 
 ## How to Run
@@ -30,7 +30,7 @@ The project models a simple library system where students can browse and borrow 
 3. Run the project:
 
 ```bash
-python library_project.py
+py media_store_app.py
 ```
 
 ## Project Features
